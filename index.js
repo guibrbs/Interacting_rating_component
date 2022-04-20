@@ -5,7 +5,7 @@ const four = document.querySelector('#four')
 const five = document.querySelector('#five')
 
 one.addEventListener('click', () => {
-    one.classList.add('selected')
+    one.classList.toggle('selected')
     two.classList.remove('selected')
     three.classList.remove('selected')
     four.classList.remove('selected')
@@ -14,7 +14,7 @@ one.addEventListener('click', () => {
 
 two.addEventListener('click', () => {
     one.classList.remove('selected')
-    two.classList.add('selected')
+    two.classList.toggle('selected')
     three.classList.remove('selected')
     four.classList.remove('selected')
     five.classList.remove('selected')
@@ -23,7 +23,7 @@ two.addEventListener('click', () => {
 three.addEventListener('click', () => {
     one.classList.remove('selected')
     two.classList.remove('selected')
-    three.classList.add('selected')
+    three.classList.toggle('selected')
     four.classList.remove('selected')
     five.classList.remove('selected')
 })
@@ -32,7 +32,7 @@ four.addEventListener('click', () => {
     one.classList.remove('selected')
     two.classList.remove('selected')
     three.classList.remove('selected')
-    four.classList.add('selected')
+    four.classList.toggle('selected')
     five.classList.remove('selected')
 })
 
@@ -41,5 +41,5 @@ five.addEventListener('click', () => {
     two.classList.remove('selected')
     three.classList.remove('selected')
     four.classList.remove('selected')
-    five.classList.add('selected')
+    five.classList.toggle('selected')
 })
