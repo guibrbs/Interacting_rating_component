@@ -3,6 +3,9 @@ const two = document.querySelector('#two')
 const three = document.querySelector('#three')
 const four = document.querySelector('#four')
 const five = document.querySelector('#five')
+const btn = document.querySelector('.btn')
+const mainCard = document.querySelector('.card')
+const thksCard = document.querySelector('.thanks.card')
 
 one.addEventListener('click', () => {
     one.classList.toggle('selected')
@@ -42,4 +45,11 @@ five.addEventListener('click', () => {
     three.classList.remove('selected')
     four.classList.remove('selected')
     five.classList.toggle('selected')
+})
+
+btn.addEventListener('click', ()=>{
+    mainCard.classList.remove('active')
+    mainCard.classList.add('inactive')
+    thksCard.classList.add('active')
+    thksCard.classList.remove('inactive')
 })

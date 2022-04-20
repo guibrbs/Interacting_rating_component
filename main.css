@@ -21,8 +21,17 @@ body{
     height: 100vh;
 }
 
+.thanks.card.active, .card.active{
+    display: flex; 
+    opacity: 1;
+}
+
+.thanks.card.inactive, .card.inactive{
+    display: none;
+    opacity: 0;
+}
+
 .thanks.card{
-    display: flex;
     justify-content: space-around;
     align-items: center;
 }
@@ -69,9 +78,9 @@ body{
     background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.041) , var(--neutral-darkBlue));
     padding: 2.5rem;
     border-radius: 2rem;
-    display: none;
     flex-direction: column;
     justify-content: space-between;
+    transition: .3s;
 }
 
 .icon{
