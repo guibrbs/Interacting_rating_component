@@ -102,3 +102,8 @@ body{
     background-color: var(--neutral-white);
     color: var(--primary);
 }
+
+.selected{
+    background-color: var(--neutral-lightGrey) !important;
+    color: var(--neutral-white);
+}
