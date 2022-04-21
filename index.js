@@ -6,6 +6,7 @@ const five = document.querySelector('#five')
 const btn = document.querySelector('.btn')
 const mainCard = document.querySelector('.card')
 const thksCard = document.querySelector('.thanks.card')
+const backBtn = document.querySelector('.btn-back')
 var selection = "You selected 0 out of 5"
 var news
 
@@ -64,4 +65,11 @@ btn.addEventListener('click', ()=>{
     mainCard.classList.add('inactive')
     thksCard.classList.add('active')
     thksCard.classList.remove('inactive')
+})
+
+backBtn.addEventListener('click', () => {
+    mainCard.classList.remove('inactive')
+    mainCard.classList.add('active')
+    thksCard.classList.add('inactive')
+    thksCard.classList.remove('active')
 })
